@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.gizli      { display: none; }
+.gorunmez   { visibility: hidden; }
+
+.debug0	{ border: 1px solid red     }
+.debug1	{ border: 1px solid pink    }
+.debug2	{ border: 1px solid blue    }
+.debug3	{ border: 1px solid orange  }
+.debug4	{ border: 1px solid yellow  }
+
+.debug0_	{ background-color: red     }
+.debug1_	{ background-color: pink    }
+.debug2_	{ background-color: blue    }
+.debug3_	{ background-color: orange  }
+.debug4_	{ background-color: yellow  }
+
+.wrap	    { overflow:hidden;  }
+
+/* = Soyut Boyut Ölçütleri
+---------------------------------------------------------------------------- */
+
+.genislik_25  {width: 25%;}
+.genislik_50  {width: 50%;}
+.genislik_75  {width: 75%;}
+.genislik_100 {width:100%;}
+
+.yukseklik_25  {height: 25%;}
+.yukseklik_50  {height: 50%;}
+.yukseklik_75  {height: 75%;}
+.yukseklik_100 {height:100%;}
+
+/* = Hizalamalar
+---------------------------------------------------------------------------- */
+
+.sol	{ float: left;      }
+.sag	{ float: right;     }
+.ort    { margin: 0 auto    }
+
+/* = clearFix
+---------------------------------------------------------------------------- */
+.cf:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html .cf              { zoom: 1; } /* IE6 */
+*:first-child+html .cf  { zoom: 1; } /* IE7 */
+
+.cf         { display: inline-table;}
+/* Hides from IE-mac \*/
+* html .cf  { height: 1%;           }
+.cf         { display: block;       }
+/* End hide from IE-mac */
+
+/* =vertical align a component
+------------------------------------------------------------------------- */
+.vacA {height:100%; display: table; position: relative; overflow: hidden;}
+.vacB {#position: absolute; #top: 50%;display: table-cell; vertical-align: middle;}
+.vacC {#position: relative; #top: -50%}
+
+/* =@font-face
+------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'monacoregular';
+    src: url('../font/monaco_0-webfont.eot');
+    src: url('../font/monaco_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/monaco_0-webfont.woff') format('woff'),
+         url('../font/monaco_0-webfont.ttf') format('truetype'),
+         url('../font/monaco_0-webfont.svg#monacoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
