@@ -113,7 +113,7 @@
 					<h2><a name="Usage">Usage</a></h2>
 				</div>
 				<div class="content">
-					<p>Simple usage like this (only for integration):</p>
+					<p>Simple usage like this:</p>
 					<br />
 					<pre alt="html">
 &lt;html&gt;
@@ -122,9 +122,6 @@
 		&lt;title&gt;&lt;/title&gt;
         &lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="js/jbarco.de.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript"&gt;
-        $
-        &lt;/script&gt;
         ...
 	&lt;/head&gt;
 	&lt;body&gt;
@@ -132,7 +129,7 @@
     &lt;/body&gt;
 &lt;/html&gt;</pre>
 					<br />
-					<p>If you want to run a function after the catching:</p>
+					<p>If you want to run a function after the catching, please set the 'jbarcode' variable as a function:</p>
 					<br />
 					<pre alt="html">
 &lt;html&gt;
@@ -142,7 +139,9 @@
         &lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="js/jbarco.de.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript"&gt;
-        $
+        jbarcode = function(){
+        	//blah blah...
+    	}
         &lt;/script&gt;
         ...
 	&lt;/head&gt;

@@ -156,6 +156,8 @@ $(document).ready(function(){
 
                 if ($(_console))    $(_console).append(" -&gt; "+ keys + " size:" + keys.length + "<br />");
 
+                jbarcode();
+
                 keyDetect = 0;
                 keyArray = new Array();
                 return this;
