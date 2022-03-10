@@ -19,4 +19,4 @@ Barcode scanners basically are keyboard inputs, but they type faster than a huma
 
 ## How it distinguish keyboard input from humans?
 
-It uses a computer algorithm used in CPUs - [Branch Prediction](https://en.wikipedia.org/wiki/Branch_predictor). If input is a different source (branch), it activates another functionality.
+It uses a computer algorithm used in CPUs - [Branch Prediction](https://en.wikipedia.org/wiki/Branch_predictor). If input is a different source (branch) by tracking  changes, it activates another functionality.
