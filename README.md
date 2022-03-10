@@ -16,3 +16,7 @@ Basically after you have added this plugin into your website and you have scanne
 No matter focussed on a text field or not! It will detect barcode input from speed of the key inputs. If it decides that is a barcode reader input it will not paste on the text field even if it focussed! 
 
 Barcode scanners basically are keyboard inputs, but they type faster than a humans!
+
+## How it distinguish keyboard input from humans?
+
+It uses a computer algorithm used in CPUs - [Branch Prediction](https://en.wikipedia.org/wiki/Branch_predictor). If input is a different source (branch), it activates another functionality.
